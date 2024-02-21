@@ -1,0 +1,105 @@
+/* .user-grass {
+  padding: 1rem;
+}
+
+@media (max-width: 576px) {
+  .user-grass {
+    padding: 0.75rem;
+  }
+}
+
+.user-grass__link {
+  position: relative;
+  display: block;
+}
+
+.user-grass__image.is-loading {
+  animation: loadingNow 0.5s ease infinite alternate;
+}
+
+.user-grass-nav {
+  font-size: 0.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1rem;
+}
+
+.user-grass-nav__previous,
+.user-grass-nav__next {
+  width: 2.75rem;
+  height: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.user-grass-nav__previous:hover,
+.user-grass-nav__next:hover {
+  color: var(--main-text);
+}
+
+.user-grass-nav__previous.is-blank,
+.user-grass-nav__next.is-blank {
+  cursor: default;
+  pointer-events: none;
+}
+
+.user-grass-nav__year--month {
+  width: 13rem;
+  text-align: center;
+} */
+
+/* Note: hover-link and position mixins were not included as they are SCSS specific and need corresponding CSS */
+
+
+/* Contribution Calendar Styles */
+.ContributionCalendar-day,
+.ContributionCalendar-day[data-level="0"] {
+  background-color: rgb(243, 246, 243);
+  shape-rendering: geometricPrecision;
+  outline: 1px solid var(--color-calendar-graph-day-border);
+  outline-offset: -1px;
+}
+
+.ContributionCalendar-day[data-level="1"] {
+  background-color: rgb(220, 237, 195);
+  outline: 1px solid var(--color-calendar-graph-day-L1-border);
+}
+
+.ContributionCalendar-day[data-level="2"] {
+  background-color: rgb(192, 246, 112);
+  outline: 1px solid var(--color-calendar-graph-day-L2-border);
+}
+
+.ContributionCalendar-day[data-level="3"] {
+  background-color: greenyellow;
+  outline: 1px solid var(--color-calendar-graph-day-L3-border);
+}
+
+.ContributionCalendar-day[data-level="4"] {
+  background-color: rgb(76, 113, 21);
+  outline: 1px solid var(--color-calendar-graph-day-L4-border);
+}
+
+.ContributionCalendar[data-holiday="halloween"] .ContributionCalendar-day[data-level="1"] {
+  background-color: rgb(64, 94, 18);
+}
+
+.ContributionCalendar[data-holiday="halloween"] .ContributionCalendar-day[data-level="2"] {
+  background-color: greenyellow;
+}
+
+.ContributionCalendar[data-holiday="halloween"] .ContributionCalendar-day[data-level="3"] {
+  background-color: var(--color-calendar-halloween-graph-day-L3-bg);
+}
+
+.ContributionCalendar[data-holiday="halloween"] .ContributionCalendar-day[data-level="4"] {
+  background-color: var(--color-calendar-halloween-graph-day-L4-bg);
+}
+
+.ContributionCalendar-label {
+  font-size: .625rem;
+}
